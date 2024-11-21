@@ -1,0 +1,72 @@
+/* Corpo com flexbox para centralizar o conteúdo */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo na vertical */
+    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+}
+
+/* Cabeçalho fixo no topo */
+header {
+    background-color: #005f99;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed; /* Fixa o cabeçalho no topo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Garante que ocupe toda a largura */
+    z-index: 1000; /* Certifica-se de que o cabeçalho fique acima de outros elementos */
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Centraliza o conteúdo principal */
+main {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex: 1; /* Faz o main ocupar o restante da tela */
+    margin-top: 60px; /* Espaço para evitar sobreposição com o cabeçalho */
+    padding: 20px;
+}
+
+/* Caixa de conteúdo */
+.caixa {
+    background-color: #f0f8ff; /* Cor de fundo */
+    border: 2px solid #005f99; /* Borda */
+    padding: 20px; /* Espaçamento interno */
+    width: 800px; /* Largura fixa */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Rodapé fixo */
+footer {
+    background-color: #005f99;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
